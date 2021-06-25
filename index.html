@@ -11,8 +11,10 @@
   <body>
     <h1 id="timetext"></h1>
     <script type="text/javascript">
-    let localizedTime = new Date().toLocaleTimeString('ja-JP')
-    document.body.getElementById("timetext") = localizedTime;
+    setInterval(function(){
+      let localizedTime = new Date().toLocaleTimeString('ja-JP')
+      document.getElementById(("timetext") = localizedTime;
+    }, 1000);
     </script>
   </body>
 </html>
