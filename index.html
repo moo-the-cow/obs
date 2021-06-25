@@ -1,11 +1,18 @@
 <html>
   <head>
     <title>Time</title>
+    <style type="text/css">
+      h1 {
+        text-color: #000;
+        text-shadow: 5px 5px #fff;
+      }
+    </style>
   </head>
   <body>
+    <h1 id="timetext"></h1>
     <script type="text/javascript">
     let localizedTime = new Date().toLocaleTimeString('ja-JP')
-    document.body.innerHTML = localizedTime;
+    document.body.getElementById("timetext") = localizedTime;
     </script>
   </body>
 </html>
